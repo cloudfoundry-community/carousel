@@ -15,10 +15,13 @@ var BuildDate        string
 var BuildVcsUrl      string
 var BuildVcsId       string
 var BuildVcsIdDate   string
-var BuildDescription string = "Carousel - cloudfoundry-community"
+var BuildDescription string = "Carousel"
+
+var verboseOutput bool
 
 func init() {
   rootCmd.AddCommand(versionCmd)
+  versionCmd.Flags().BoolVarP(&verboseOutput, "verbose", "v", false, "display  extended versioning information" )
 }
 
 var versionCmd = &cobra.Command{
@@ -40,8 +43,12 @@ var versionCmd = &cobra.Command{
 	  if len(buildmeta) > 0 {
 		  buildmeta = "+" + buildmeta
 	  }
-          fmt.Fprintf( os.Stdout, "v%v%v%v %v  %v\n%v  %v   %v\n",
-                       version, prerelease, buildmeta, builddate, description,
-		       vcsurl, vcsid, vcsiddate)
+	  fmt.Fprintf( os.Stdout, "%v version %v%v%v built %v\n",
+                       description, version, prerelease, buildmeta, builddate)
+
+          if verboseOutput {
+		  fmt.Fprintf(os.Stdout, "%15s: %v\n%15s: %v\n%15s: %v\n",
+		  "vcsid", vcsid, "vcsdate", vcsiddate, "vcsurl", vcsurl)
+          }
   },
 }
