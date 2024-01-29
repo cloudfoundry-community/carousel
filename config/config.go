@@ -1,6 +1,7 @@
 package config
 
 import "github.com/kelseyhightower/envconfig"
+import "strings"
 
 type Config struct {
 	Bosh    *Bosh
@@ -26,6 +27,9 @@ func LoadConfig() (*Config, error) {
 	err := envconfig.Process("bosh", &b)
 	if err != nil {
 		return nil, err
+	}
+	if strings.Contains(b.CaCert, "\\n") {
+		b.CaCert = strings.ReplaceAll(b.CaCert, "\\n", "\n")
 	}
 
 	var c Credhub
