@@ -6,10 +6,10 @@ import (
 	credhubcli "code.cloudfoundry.org/credhub-cli/credhub"
 	"code.cloudfoundry.org/credhub-cli/credhub/auth"
 	oc "github.com/cloudboss/ofcourse/ofcourse"
-	cbosh "github.com/starkandwayne/carousel/bosh"
-	"github.com/starkandwayne/carousel/config"
-	ccredhub "github.com/starkandwayne/carousel/credhub"
-	. "github.com/starkandwayne/carousel/state"
+	cbosh "github.com/cloudfoundry-community/carousel/bosh"
+	"github.com/cloudfoundry-community/carousel/config"
+	ccredhub "github.com/cloudfoundry-community/carousel/credhub"
+	. "github.com/cloudfoundry-community/carousel/state"
 )
 
 var (

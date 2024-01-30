@@ -7,8 +7,8 @@ import (
 
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
-	"github.com/starkandwayne/carousel/credhub"
-	"github.com/starkandwayne/carousel/state"
+	"github.com/cloudfoundry-community/carousel/credhub"
+	"github.com/cloudfoundry-community/carousel/state"
 	"gopkg.in/yaml.v2"
 
 	"github.com/grantae/certinfo"

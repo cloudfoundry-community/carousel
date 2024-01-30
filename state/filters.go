@@ -3,7 +3,7 @@ package state
 import (
 	"time"
 
-	"github.com/starkandwayne/carousel/credhub"
+	"github.com/cloudfoundry-community/carousel/credhub"
 )
 
 type Filter func(*Credential) bool

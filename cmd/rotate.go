@@ -20,7 +20,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	cstate "github.com/starkandwayne/carousel/state"
+	cstate "github.com/cloudfoundry-community/carousel/state"
 )
 
 // statusCmd represents the status command

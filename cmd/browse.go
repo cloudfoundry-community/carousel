@@ -18,7 +18,7 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/starkandwayne/carousel/app"
+	"github.com/cloudfoundry-community/carousel/app"
 )
 
 // browseCmd represents the browse command

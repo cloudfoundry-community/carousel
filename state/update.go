@@ -3,8 +3,8 @@ package state
 import (
 	"fmt"
 
-	"github.com/starkandwayne/carousel/bosh"
-	"github.com/starkandwayne/carousel/credhub"
+	"github.com/cloudfoundry-community/carousel/bosh"
+	"github.com/cloudfoundry-community/carousel/credhub"
 )
 
 func (s *state) Update(credentials []*credhub.Credential, variables []*bosh.Variable) error {

@@ -1,4 +1,4 @@
-module github.com/starkandwayne/carousel
+module github.com/cloudfoundry-community/carousel
 
 go 1.19
 

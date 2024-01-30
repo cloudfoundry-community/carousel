@@ -3,7 +3,7 @@ package credhub_test
 import (
 	"encoding/json"
 
-	. "github.com/starkandwayne/carousel/credhub"
+	. "github.com/cloudfoundry-community/carousel/credhub"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

@@ -1,8 +1,8 @@
 package app
 
 import (
-	"github.com/starkandwayne/carousel/credhub"
-	"github.com/starkandwayne/carousel/state"
+	"github.com/cloudfoundry-community/carousel/credhub"
+	"github.com/cloudfoundry-community/carousel/state"
 
 	"github.com/gdamore/tcell/v2"
 

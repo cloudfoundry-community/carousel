@@ -6,9 +6,9 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/starkandwayne/carousel/bosh"
-	"github.com/starkandwayne/carousel/credhub"
-	. "github.com/starkandwayne/carousel/state"
+	"github.com/cloudfoundry-community/carousel/bosh"
+	"github.com/cloudfoundry-community/carousel/credhub"
+	. "github.com/cloudfoundry-community/carousel/state"
 )
 
 var _ = Describe("Credential", func() {

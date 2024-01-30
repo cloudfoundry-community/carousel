@@ -6,9 +6,9 @@ import (
 
 	"github.com/karrick/tparse"
 	"github.com/spf13/pflag"
-	ccredhub "github.com/starkandwayne/carousel/credhub"
-	. "github.com/starkandwayne/carousel/state"
-	cstate "github.com/starkandwayne/carousel/state"
+	ccredhub "github.com/cloudfoundry-community/carousel/credhub"
+	. "github.com/cloudfoundry-community/carousel/state"
+	cstate "github.com/cloudfoundry-community/carousel/state"
 )
 
 type actionCriteria struct {

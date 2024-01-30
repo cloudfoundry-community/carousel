@@ -18,7 +18,7 @@ package cmd
 import (
 	"github.com/cloudboss/ofcourse/ofcourse"
 	"github.com/spf13/cobra"
-	"github.com/starkandwayne/carousel/resource"
+	"github.com/cloudfoundry-community/carousel/resource"
 )
 
 var concourseCmd = &cobra.Command{

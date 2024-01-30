@@ -10,7 +10,7 @@ import (
 	"github.com/onsi/gomega/ghttp"
 	. "github.com/onsi/gomega/gstruct"
 
-	. "github.com/starkandwayne/carousel/credhub"
+	. "github.com/cloudfoundry-community/carousel/credhub"
 
 	chcli "code.cloudfoundry.org/credhub-cli/credhub"
 	"code.cloudfoundry.org/credhub-cli/credhub/auth"

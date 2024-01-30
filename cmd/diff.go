@@ -28,7 +28,7 @@ import (
 	"github.com/gonvenience/ytbx"
 	"github.com/homeport/dyff/pkg/dyff"
 	"github.com/spf13/cobra"
-	cstate "github.com/starkandwayne/carousel/state"
+	cstate "github.com/cloudfoundry-community/carousel/state"
 
 	boshtpl "github.com/cloudfoundry/bosh-cli/director/template"
 )
