@@ -1,6 +1,6 @@
 module github.com/starkandwayne/carousel
 
-go 1.20
+go 1.19
 
 require (
 	code.cloudfoundry.org/credhub-cli v0.0.0-20210201140144-df587bb71e95
