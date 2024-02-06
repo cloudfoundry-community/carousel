@@ -29,7 +29,7 @@ GO_LDFLAGS = -ldflags="-X '$(GOMODULECMD).SemVerVersion=$(SEMVER_VERSION)' \
 .PHONY: build test require-% release-% clean
 
 build:
-	go build $(GO_LDFLAGS) -o $(CAROUSEL_PATH)
+	CGO_ENABLED=0 go build $(GO_LDFLAGS) -o $(CAROUSEL_PATH)
 	$(CAROUSEL_PATH) version
 
 test: $(if $(wildcard $(CAROUSEL_PATH)),build)
@@ -48,7 +48,7 @@ release-all: $(RELEASES)
 define build-target
 release-$(1)/$(2)-$(PROJECT): # require-VERSION
 	@echo "Building $(PROJECT) $(VERSION) ($(1)/$(2)) ..." 
-	GOOS=$(1) GOARCH=$(2) go build -o $(RELEASE_ROOT)/$(PROJECT)-$(1)-$(2)$(if $(patsubst windows,,$(1)),,.exe) $(GO_LDFLAGS)
+	CGO_ENABLED=0 GOOS=$(1) GOARCH=$(2) go build -o $(RELEASE_ROOT)/$(PROJECT)-$(1)-$(2)$(if $(patsubst windows,,$(1)),,.exe) $(GO_LDFLAGS)
 	@ls -la $(RELEASE_ROOT)/$(PROJECT)-$(1)-$(2)$(if $(patsubst windows,,$(1)),,.exe)
 	@echo ""
 endef
