@@ -6,7 +6,7 @@ A BOSH aware cli tool for managing the rotation of credentials stored in CredHub
 
 As with all go applications you can create the binary by:
 
-* `git clone https://github.com/starkandwayne/carousel`
+* `git clone https://github.com/cloudfoundry-community/carousel`
 * `cd carousel`
 * `go build`
 
@@ -97,7 +97,7 @@ resource_types:
 - name: carousel
   type: registry-image
   source:
-	repository: starkandwayne/carousel-concourse
+	repository: cloudfoundry-community/carousel-concourse
 
 resources:
 - name: carousel
