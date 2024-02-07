@@ -29,7 +29,7 @@ header "Building $PROJECT v$VERSION..."
 
 cd "$REPO_ROOT"
 go version; echo; echo
-make clean release-all VERSION=$VERSION PROJECT=$PROJECT
+make clean release-all SEMVER_VERSION=$VERSION PROJECT=$PROJECT
 cd release
 tar -zcvf ../../$BUILD_ROOT/$PROJECT-$VERSION.tar.gz $PROJECT-$VERSION-*
 
