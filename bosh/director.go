@@ -1,7 +1,7 @@
 package bosh
 
 import (
-	"github.com/starkandwayne/carousel/config"
+	"github.com/cloudfoundry-community/carousel/config"
 
 	boshdir "github.com/cloudfoundry/bosh-cli/director"
 	boshuaa "github.com/cloudfoundry/bosh-cli/uaa"

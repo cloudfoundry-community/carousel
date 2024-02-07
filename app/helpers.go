@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/rivo/tview"
-	"github.com/starkandwayne/carousel/state"
+	"github.com/cloudfoundry-community/carousel/state"
 )
 
 func toStatus(c *state.Credential) string {

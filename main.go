@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "github.com/starkandwayne/carousel/cmd"
+import "github.com/cloudfoundry-community/carousel/cmd"
 
 func main() {
 	cmd.Execute()

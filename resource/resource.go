@@ -7,7 +7,7 @@ import (
 
 	oc "github.com/cloudboss/ofcourse/ofcourse"
 
-	cstate "github.com/starkandwayne/carousel/state"
+	cstate "github.com/cloudfoundry-community/carousel/state"
 )
 
 type Resource struct{}

@@ -3,8 +3,8 @@ package state
 import (
 	"github.com/emirpasic/gods/maps/treebidimap"
 	"github.com/emirpasic/gods/utils"
-	"github.com/starkandwayne/carousel/bosh"
-	"github.com/starkandwayne/carousel/credhub"
+	"github.com/cloudfoundry-community/carousel/bosh"
+	"github.com/cloudfoundry-community/carousel/credhub"
 )
 
 type State interface {

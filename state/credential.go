@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/dustin/go-humanize"
-	"github.com/starkandwayne/carousel/bosh"
-	"github.com/starkandwayne/carousel/credhub"
+	"github.com/cloudfoundry-community/carousel/bosh"
+	"github.com/cloudfoundry-community/carousel/credhub"
 )
 
 func (c *Credential) MarshalJSON() ([]byte, error) {
