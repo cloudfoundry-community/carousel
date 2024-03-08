@@ -10,7 +10,7 @@ jobs:
       image_resource:
         type: docker-image
         source:
-          repository: starkandwayne/carousel-concourse
+          repository: cloudfoundry-community/carousel-concourse
       params:
         BOSH_ENVIRONMENT: ((bosh_environment))
         BOSH_CLIENT: ((bosh_client))
@@ -56,13 +56,13 @@ resources:
 - name: repo
   type: git
   source:
-    uri: https://github.com/starkandwayne/carousel.git
+    uri: https://github.com/cloudfoundry-community/carousel.git
 
 resource_types:
 - name: carousel
   type: registry-image
   source:
-    repository: starkandwayne/carousel-concourse
+    repository: cloudfoundry-community/carousel-concourse
 
 - name: bosh-deployment
   type: docker-image
